@@ -22,6 +22,20 @@
 
 <body>
 
+	<div id="chatbot-circle" class="chatbot-circle">
+		<img src="img/pngtree-smart-chatbot-cartoon-clipart-png-image_6620453.png" alt="Chatbot Icon">
+	</div>
+
+	<!-- Chatbot Container -->
+	<div id="chatbot-container" class="chatbot-container">
+		<div class="chatbot-header">
+			<span class="chatbot-title">Ask me to know more 😄</span>
+			<span class="chatbot-close">&times;</span>
+		</div>
+		<embed class="chatbot-iframe" src="http://13.233.250.70:8000/">
+	</div>
+
+
 	<!--Hero_Section-->
 	<section id="hero_section" class="top_cont_outer">
 		<div class="hero_wrapper">
@@ -405,13 +419,12 @@
 					class="portfolio-item one-four  dl ai nlp mlops isotope-item effect-oscar">
 
 					<div class="portfolio_img">
-						<img src="https://raw.githubusercontent.com/IAMPathak2702/ved-prakash-pathak-wasserstoff-AiTask/main/snapshots/photo_2024-05-06_18-48-47.jpg"
+						<img src="https://raw.githubusercontent.com/IAMPathak2702/WebSage-Chat-with-Any-Website/main/snapshots/chatbotPage.png"
 							alt="Portfolio 1">
 					</div>
 					<figcaption>
 						<div>
-							<a href="https://github.com/IAMPathak2702/ved-prakash-pathak-wasserstoff-AiTask"
-								class="fancybox">
+							<a href="https://github.com/IAMPathak2702/WebSage-Chat-with-Any-Website" class="fancybox">
 								<h2>CHAT<span> BOT</span></h2>
 							</a>
 						</div>
@@ -795,6 +808,19 @@
 	<script src="contact/jqBootstrapValidation.js"></script>
 	<script src="contact/contact_me.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script>
+		const chatbotCircle = document.getElementById('chatbot-circle');
+		const chatbotContainer = document.getElementById('chatbot-container');
+		const chatbotClose = document.querySelector('.chatbot-close');
+
+		chatbotCircle.addEventListener('click', () => {
+			chatbotContainer.style.display = 'block';
+		});
+
+		chatbotClose.addEventListener('click', () => {
+			chatbotContainer.style.display = 'none';
+		});
+	</script>
 
 </body>
 
