@@ -1972,7 +1972,8 @@ color: #777;
 font-size: 12px;
 line-height: 22px;
 }
-img {
+
+.img {
  /* min-height: 40px; */
  /* max-height: 40px; */
 }
@@ -2417,7 +2418,7 @@ img.img.img-circle.lt-box {/* float: left; */width: 64px;height: auto;}
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
     z-index: 9999;
-    border-radius: 25%;
+    border-radius: 5px;
     
 }
 
