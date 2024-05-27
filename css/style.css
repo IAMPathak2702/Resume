@@ -512,8 +512,29 @@ a.read_more:hover {
     border-bottom: 1px dashed #000000;
 }
 
+/* Animation for bouncy effect */
+/* Animation for noise-to-image transition */
+@keyframes noise-to-image {
+  0% {
+    filter: grayscale(100%) contrast(200%) brightness(200%) blur(5px);
+  }
+  100% {
+    filter: none;
+  }
+}
+
+/* Apply the animation to the image elements */
+.service_icon span img {
+  animation: noise-to-image 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
  
 
+
+.service_icon span img:hover {
+  transform: scale(1.2);
+  z-index: 9999; /* Increase the scale to 150% (1.5 times the original size) */
+}
 .service_icon span {
     background: transparent;
     display: block;
